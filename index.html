@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <form>
-        <h2>SỞ THÍCH CỦA BẠN</h2>
-        Họ và tên :
-        <input name="account" type="text" /> 
-        <br> <br>
-        Email : 
-        <input name="email" type="password" />
-        <br> <br>
-        Sở thích : 
-        <label><input name="hobby" value="thethao" type="checkbox" />Thể thao</label>
-        <label><input name="hobby" value="amnhac" type="checkbox" />Âm nhạc</label>
-        <label><input name="hobby" value="docsach" type="checkbox" />Đọc sách</label>
-        <br>
-        <label><input name="hobby" value="luotweb" type="checkbox" />Lướt web</label>
-        <label><input name="hobby" value="choigame" type="checkbox" />Chơi game</label>
-        <label><input name="hobby" value="dienanh" type="checkbox" />Điện ảnh</label>
-        <br>
-        <label><input name="hobby" value="dulich" type="checkbox" />Du lịch</label>
-        <br>
-        <label><input type="submit" name="Gửi thông tin" /></label>
-        <label><input type="reset" name="Nhập lại" /></label>
-    </form>
-</body>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- internal -->
+    <style>
+      h1{
+        color: green ; 
+      }
+      
+      a{text decoration:none;}
+
+      /* # là một "class" */
+      #title {
+        color: blue;
+        text-align: center;
+        /* underline | none | line-through | overline */
+        text-decoration: overline;
+        /* uppercase | lowercase | capitalize */
+        text-transform: uppercase;
+        font-family: 'Roboto', 'Arial';
+        /* bold | 100 - 700 | bolder */
+        font-weight: bolder;
+        /* background-image: url('https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/234621/Xiaomi-12-xam-thumb-mau-600x600.jpg'); */
+        /* max HEX có 8 c/so thì hai số cuối là độ đậm nhạt */
+        background-color: rgb(100, 25, 40); 
+      }
+
+      /* .là lấy tất cả những cái "align" */
+      .align{
+        text-align: inherit;    /*  kế thừa từ trang */
+      }
+      
+      .text-green{
+        color: green;
+        font-size: ...;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="align">
+      abc
+      <p>test</p>
+    </div>
+    <h2 id="title" class="text-green">Trang web CSS</h2>
+    <h1 style="color: red">Home Page</h1>
+    <a href="" alt="" class="text-green" >link</a>
+  </body>
 </html>

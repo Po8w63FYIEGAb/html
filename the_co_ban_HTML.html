@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Danh sách học sinh</h1>
+  <div>
+    <table border=1>
+      <thead>
+        <tr>
+          <td>ID</tdtd>
+          <td>Họ tên</td>
+          <td>Tuổi</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Hieukunn</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td colspan="2">Hieukunn</td>
+          
+        </tr>
+        <tr>
+          <td rowspan="22">1</td>
+          <td>Hieukunn</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          
+          <td>Hieukunn</td>
+          <td>16</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h1>Đăng kí thành viên</h1>
+    <form method="get" name="Login_Form" action="/">
+      <div>
+        <p>Họ tên :</p>
+        <input type="text" name="name" />
+      <div>
+
+      <div>
+        <p>Mật khẩu:</p>
+        <input type="password" name="password" />
+      </div>
+
+      <div>
+        <p>Giới tính</p>
+        <input type="radio" name="gender" value="male" checked /> Nam
+        <input type="radio" name="gender" value="female" checked /> Nữ
+
+        <select name="gender1" id="">
+          <option value="males_1">Nam</option>"
+          <option value="females_1">Nữ</option>"
+        </select>
+      </div>
+
+      <div>
+        <p>Sở thích</p>
+        <input type="checkbox" name="hobby" value="Game" checked /> Game
+        <input type="checkbox" name="hobby" value="MusicMusic" checked /> Music
+        <input type="checkbox" name="hobby" value="Gym" checked /> Gym
+
+        <select name="gender1" id="" multiple>
+          <option value="males_1">Game</option>"
+          <option value="females_1">Music</option>"
+          <option value="females_1">GymGym</option>"
+        </select>
+      </div>
+
+      <div>
+        <p>Thông tin bổ sung</p>
+        <textarea name="description" cols="60" rows="10"></textarea>
+      </div>
+
+      <div>
+        <input type="submit" name="submit"/>
+        <input type="reset" name="reset"/>
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>
